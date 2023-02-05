@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+:root {
+  font-size: 10px;
+  --heading-height: 30em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url('https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80');
+  background-position: center;
+  background-size: cover;
+} 
+
+nav {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 36px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(210, 226, 237, 0.944);
+}
+
+.heading_style {
+  /* padding: 18px 0; */
+  font-size: 30px;
+  font-style: bold;
+  /* letter-spacing: 2px; */
+  /* font-weight: 900; */
+  /* font-size: 1.5rem; */
+  /* margin-bottom: 50px; */
+  font-family: 'Raleway';
+  text-transform: uppercase;
+  background-color:transparent;
+  color: rgb(23, 150, 218);
+}
+
+.cards {
+  margin-left: 45px;
+  margin-right: 15px;
+  padding: 23px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 6%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: rgb(211, 70, 206);
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  box-shadow: 0px 14px 10px -7px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transition: .4s all ease-in-out;
+  transform: scale(1.1);
+  background-color: rgb(19, 11, 54);
+}
+
+.card__img {
+  width: 100%;
+  height: 300px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  background-color: white;
+}
+
+img {
+  width: 100%;
+  height: 30vh;
+}
+
+.card__info {
+  background-color: white;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  padding: 20px 24px 24px 24px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.card__category {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: gray;
+  background-color: white;
+}
+
+.card__title {
+  font-style: italic;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: white;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: xx-large;
+  font-style: bold;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* button {
+  padding: 5px 8px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: 3px solid black;
+  background-color: white;
+  color: #868686;
+  cursor: pointer;
+}
+
+button {
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(71, 171, 184);
+  color: rgb(9, 9, 9);
+  transition: 0.2s;
+} */
+
+/* body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+} */
+
+
+span {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+
+span a {
+  font-size: 15px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+span a:before,
+span a:after {
+  position: absolute;
+  content: "WATCH NOW";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+span a:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+
+span a:after {
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+
+span a:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
